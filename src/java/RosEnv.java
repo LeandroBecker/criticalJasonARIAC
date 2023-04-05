@@ -280,7 +280,7 @@ public class RosEnv extends Environment {
 					if (msg.data){
 						//clearPercepts("human");
 						logger.info("ENV detected Crical Perception " + cont);
-						cbsArray[0] = Boolean.TRUE;
+						cbsArray[0] = Boolean.TRUE; //for the critical, comment the next 3
 						// Literal result = new LiteralImpl("cp"); 
 						// result.addTerm(new NumberTermImpl(cont++)); 
 						// addPercept("human",result);
