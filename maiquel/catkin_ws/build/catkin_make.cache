@@ -1,0 +1,2 @@
+my_ros_package
+-DCATKIN_DEVEL_PREFIX=/home/leandro/ariac_ws/src/ARIAC/ariac_human/criticalJasonARIAC/maiquel/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/leandro/ariac_ws/src/ARIAC/ariac_human/criticalJasonARIAC/maiquel/catkin_ws/install -G Unix Makefiles

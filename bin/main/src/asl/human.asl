@@ -28,20 +28,17 @@ previous_location(station3,station4).
 //+!standby: true <- !start.   // used for tests
 
 +!start : firstStation(ST) & helpful 
-<- .include("helpful.asl"); .print("Human agent started as HELPFUL"); !work(ST).
-//; for ( .range(I,0,99) ) { // creates 6 concurrent intentions for g
-//         !!go(9990000);
-//      }.
+<- .include("helpful.asl"); .print("Human agent started as HELPFUL"); !work(ST); for ( .range(I,0,99) ) { // creates 6 concurrent intentions for g
+         !!go(9990000);
+      }.
 +!start : firstStation(ST) & indifferent 
-<- .include("indifferent.asl"); .print("Human agent started as INDIFFERENT"); !work(ST).
-//; for ( .range(I,0,99) ) { // creates 6 concurrent intentions for g
-//         !!go(9990000);
-//      }.
+<- .include("indifferent.asl"); .print("Human agent started as INDIFFERENT"); !work(ST); for ( .range(I,0,99) ) { // creates 6 concurrent intentions for g
+         !!go(9990000);
+      }.
 +!start : firstStation(ST) & antagonistic 
-<- .include("antagonistic.asl"); .print("Human agent started as ANTAGONISTIC"); !work(ST).
-//; for ( .range(I,0,99) ) { // creates 6 concurrent intentions for g
-//         !!go(9990000);
-//      }.
+<- .include("antagonistic.asl"); .print("Human agent started as ANTAGONISTIC"); !work(ST); for ( .range(I,0,99) ) { // creates 6 concurrent intentions for g
+         !!go(9990000);
+      }.
 
 +!go(0).
 +!go(X) <- !go(X-1).
